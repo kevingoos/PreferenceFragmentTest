@@ -7,7 +7,7 @@ using PreferenceTest.Core.ViewModels.Fragments;
 
 namespace PreferenceTest.Droid.Fragments
 {
-    [MvxFragmentPresentation(typeof(MainPreferenceViewModel), Resource.Id.content_frame, true)]
+    [MvxFragmentPresentation(typeof(MainPreferenceViewModel), Resource.Id.content_frame)]
     [Register(nameof(PreferenceFragment))]
     public class PreferenceFragment : MvxPreferenceFragmentCompat<PreferenceViewModel>
     {
