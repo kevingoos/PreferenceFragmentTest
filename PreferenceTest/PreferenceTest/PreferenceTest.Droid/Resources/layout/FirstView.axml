@@ -34,8 +34,13 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Test123"
-              local:MvxBind="Click PreferencesCommand" />
+                android:text="Open preferences"
+                local:MvxBind="Click PreferencesCommand" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read preferences value for vibration"
+                local:MvxBind="Click SettingsCommand" />
         </LinearLayout>
     </FrameLayout>
 </RelativeLayout>

@@ -5,7 +5,7 @@ using PreferenceTest.Core.ViewModels;
 
 namespace PreferenceTest.Droid.Activities
 {
-    [Activity(Label = "Settings")]
+    [Activity(Label = "Settings"), IntentFilter(new []{ "android.intent.action.MANAGE_NETWORK_USAGE" }, Categories = new []{ "android.intent.category.DEFAULT" })]
     public class MainPreferenceActivity : MvxAppCompatActivity<MainPreferenceViewModel>
     {
         protected override void OnCreate(Bundle bundle)

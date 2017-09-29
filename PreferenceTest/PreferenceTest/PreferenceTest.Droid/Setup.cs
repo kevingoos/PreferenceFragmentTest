@@ -1,7 +1,10 @@
 using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
+using PreferenceTest.Core.Handlers;
+using PreferenceTest.Droid.Handlers;
 
 namespace PreferenceTest.Droid
 {
@@ -13,6 +16,7 @@ namespace PreferenceTest.Droid
 
         protected override IMvxApplication CreateApp()
         {
+            Mvx.RegisterSingleton<INotificationHandler>(new NotificationHandler());
             return new Core.App();
         }
 

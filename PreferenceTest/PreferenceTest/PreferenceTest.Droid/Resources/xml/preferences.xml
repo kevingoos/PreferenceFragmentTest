@@ -1,19 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-  <EditTextPreference android:title="Your Name"
-                      android:key="username"
-                      android:summary="Please provide your username"></EditTextPreference>
-  <CheckBoxPreference android:title="Application Updates"
-                      android:defaultValue="false"
-                      android:summary="This option if selected will allow the application to check for latest versions."
-                      android:key="applicationUpdates" />
-  <ListPreference     android:title="Download Details"
-                      android:summary="Select the kind of data that you would like to download"
-                      android:key="downloadType"
-                      android:defaultValue="1"
-                      android:entries="@array/listArray"
-                      android:entryValues="@array/listValues" />
-  <CheckBoxPreference
-    android:key="prefer wifi"
-    android:title="Prefer WiFi" />
+  <PreferenceCategory android:title="Notify">
+    <CheckBoxPreference
+      android:key="vibration on"
+      android:title="Enable vibration"
+      android:summary="The phone will vibrate when you come close enough to a point of interest (meaning Signal, Ocl Alert, ...)"/>
+
+    <EditTextPreference android:title="Vibrate distance"
+                        android:key="vibrate distance"
+                        android:summary="Please select the distance that the vibrations starts" />
+
+    <CheckBoxPreference
+      android:key="sound on"
+      android:summary="The phone will make a sound when you come close enough to a point of interest (meaning Signal, Ocl Alert, ...)"
+      android:title="Enable sound" />
+
+    <EditTextPreference android:title="Sound distance"
+                        android:key="sound distance"
+                        android:summary="Please select the distance that the sound starts" />
+  </PreferenceCategory>
+
+  <PreferenceCategory android:title="Connection">
+    <CheckBoxPreference
+      android:key="prefer wifi"
+      android:title="Only download data over wifi" />
+  </PreferenceCategory>
+
+  <PreferenceCategory android:title="Caching">
+    <Preference
+      android:title="Clear cache"
+      android:key="button"
+      android:summary="This will remove all the database cache from the device" />
+  </PreferenceCategory>
 </PreferenceScreen>
