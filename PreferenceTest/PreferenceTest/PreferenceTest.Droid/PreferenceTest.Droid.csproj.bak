@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>PreferenceTest.Droid</RootNamespace>
     <AssemblyName>PreferenceTest.Droid</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
